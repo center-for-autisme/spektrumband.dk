@@ -1,1 +1,2 @@
-# spektrumband.dk
+# spektrumband
+spektrumband.dk

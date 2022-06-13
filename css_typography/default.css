@@ -1,0 +1,192 @@
+
+/* Using viewport sized typography. Source: https://css-tricks.com/viewport-sized-typography/ */
+
+* {
+    box-sizing: border-box;
+    /* makes margin and padding part of the overall width of all elements */
+}
+
+/* --------------------------- */
+
+body {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-size: 18px;
+    letter-spacing: -0.015em;
+}
+
+article {
+    width: 90vw;
+    margin: auto;
+}
+
+/*------------------------------------*
+  TYPE
+*------------------------------------*/
+/*--- HEADINGS ---*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 24px;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+}
+
+h1 {
+    font-size: 1.5em;
+    /* 24px --> 24 ÷ 24 = 1 */
+    /* 24px --> 24 ÷ 16 = 1.5 */
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 1.375em;
+    /* 24px --> 24 ÷ 22 = 1.090909(09) */
+    /* 22px --> 22 ÷ 16 = 1.375 */
+    line-height: 1.0909em;
+}
+
+h3 {
+    font-size: 1.25em;
+    /* 24px --> 24 ÷ 20 = 1.2 */
+    /* 20px --> 20 ÷ 16 = 1.25 */
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: 1.125em;
+    /* 24px --> 24 ÷ 18 = 1.3333333(3) */
+    /* 18px --> 18 ÷ 16 = 1.125 */
+    line-height: 1.333em;
+}
+
+h5,
+h6 {
+    font-size: 1em;
+    /* 24px --> 24 ÷ 16 = 1.5 */
+    /* 16px --> 16 ÷ 16 = 1 */
+    line-height: 1.5em;
+}
+
+/*--- PARAGRAPHS ---*/
+p {
+
+    margin-bottom: 24px;
+}
+
+p+p {
+    text-indent: 1em;
+    margin-top: -24px;
+}
+
+/*--- LISTS ---*/
+ol,
+ul {
+    /* Remember, if your magic number is
+    different to this, use your own. */
+    margin-bottom: 24px;
+}
+
+ul {
+    list-style: square outside;
+}
+
+ol ol,
+ul ul {
+    margin: 0 0 0 60px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li li {
+    margin-bottom: 0;
+}
+
+/*--- QUOTES ---*/
+blockquote {
+    margin: 0 60px 0 45px;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    text-indent: -.4em;
+}
+
+blockquote b {
+    display: block;
+    text-indent: 0;
+}
+
+/*--- LINKS ---*/
+a {
+    color: #09f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active,
+a:focus {
+    position: relative;
+    top: 1px;
+}
+
+.read-more:after {
+    /* Insert a space then right angled-quote */
+    content: "\0020\00BB";
+}
+
+/* Screens 1000px - 1200px */
+
+@media screen and (min-width: 480px) {
+
+    body {
+        font-size: 18px;
+        font-size: 3.5vw;
+    }
+    article, nav>ul {
+        Width: 90vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    body {
+        font-size: 20px;
+        font-size: 2.7vw;
+    }
+    article, nav>ul {
+        Width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        font-size: 20px;
+        font-size: 1.9vw;
+    }
+
+    article, nav>ul {
+        Width: 66vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        font-size: 30px;
+        font-size: 1.9vw;
+    }
+
+    article, nav>ul {
+        Width: 66vw;
+    }
+}
