@@ -3,8 +3,13 @@ body {
     padding: 0;
     list-style: none;
     text-decoration: none;
-    background-color: lightblue;
+    background-color: #ffcb20;
     color: #6d1313;
+}
+
+#wrapper {
+    background-color: lightblue;
+    padding-top: 2rem;
 }
 
 footer,
@@ -16,9 +21,7 @@ header {
 }
 
 
-header {
-    margin-bottom: 2rem;
-}
+header {}
 
 footer {
     padding-bottom: 2rem;
@@ -26,28 +29,30 @@ footer {
 
 /* Navigation */
 
-header > nav {
+header>nav {
     background-color: #6d1313;
     text-align: center;
 }
 
-header > nav ul {
+header>nav ul {
     list-style-type: none;
     margin: auto auto 0;
     overflow: hidden;
+    padding: 0;
 }
 
-header > nav ul li {
+header>nav ul li {
     float: left;
     border-right: 1px solid lightblue;
     margin-bottom: 0;
+    padding: 0;
 }
 
-header > nav ul li:last-child {
+header>nav ul li:last-child {
     border-right: none;
 }
 
-header > nav a {
+header>nav a {
     color: lightblue;
     display: block;
     padding: 0.5rem;
@@ -55,7 +60,7 @@ header > nav a {
 
 }
 
-header > nav a:hover {
+header>nav a:hover {
     text-decoration: none;
     background-color: #4b1313;
 }
@@ -79,4 +84,10 @@ address {
     margin: auto;
     text-align: left;
     padding: 0.5rem 0 3rem;
+}
+
+/* lists */
+
+li {
+    list-style-position: inside;
 }
