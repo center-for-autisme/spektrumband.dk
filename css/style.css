@@ -102,6 +102,11 @@ address {
 
 /* lists */
 
+ul {
+    padding-left: 1rem;
+}
+
 li {
-    list-style-position: inside;
+    list-style-position: outside;
+    list-style-type: disc;
 }
