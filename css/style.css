@@ -8,7 +8,7 @@ body {
 }
 
 #wrapper {
-    background-color: #e1e1e1;
+    background-color: #f1f1f1;
     padding-top: 2rem;
 }
 
@@ -30,7 +30,8 @@ header {
 }
 
 footer {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-top: #6d1313 1rem solid;
 }
 
 /* Navigation */
@@ -81,6 +82,13 @@ header>nav a:hover {
     display: block;
     width: 50%;
     margin: auto;
+}
+
+footer>img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 1rem;
 }
 
 /* Misc. */
