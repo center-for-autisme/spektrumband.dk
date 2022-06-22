@@ -39,6 +39,9 @@ $text-size: 18px;
 $letter-spacing: -0.015em;
 
 
+/// Background color
+/// @type Color
+$backgr-color: rgb(249, 249, 249) !default;
 
 /// Copy text color
 /// @type Color
@@ -64,7 +67,9 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
 
-
+/// Very dark grey
+/// @type Color
+$very-dark-grey: rgb(51, 51, 51) !default;
 
 
 

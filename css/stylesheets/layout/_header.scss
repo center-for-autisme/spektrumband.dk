@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    background-color: $brand-color;
+}
+
+header {
+    background-image: url("../images/Spektrumband.png");
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position-x: 5%;
+    background-size: 30%;
+    box-shadow: 0rem 0.1rem 0.2rem $very-dark-grey;
+}
