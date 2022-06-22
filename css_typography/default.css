@@ -115,6 +115,7 @@ h6 {
 /*--- PARAGRAPHS ---*/
 p {
 
+    text-indent: 0.66em;
     margin-bottom: 24px;
 }
 
@@ -151,7 +152,6 @@ li li {
 /*--- QUOTES ---*/
 blockquote {
     padding: 0.5rem;
-    border-radius: 1rem;
     margin-bottom: 1.5rem;
     font-style: italic;
 }
