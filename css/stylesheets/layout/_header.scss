@@ -7,13 +7,59 @@ header {
     margin: auto;
     text-align: center;
     background-color: $brand-color;
-}
-
-header {
-    background-image: url("../images/Spektrumband.png");
+    background-image: url("../../images/Spektrumband.png");
     background-repeat: no-repeat;
     background-position-y: 10%;
     background-position-x: 5%;
-    background-size: 30%;
+    background-size: 30% auto;
     box-shadow: 0rem 0.1rem 0.2rem $very-dark-grey;
+    /* Navigation */
+
+    nav {
+        background-color: #6d1313;
+        text-align: center;
+
+
+        ul {
+            list-style-type: none;
+            margin: auto auto 0;
+            overflow: hidden;
+            padding: 0;
+
+            li {
+                float: left;
+                border-right: 1px solid #ffcb20;
+                margin-bottom: 0;
+                padding: 0;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+        }
+
+        a {
+            color: lightblue;
+            display: block;
+            padding: 0.5rem;
+        }
+
+        a:hover {
+            text-decoration: none;
+            background-color: #4b1313;
+        }
+    }
+
+    /* images */
+
+    .resp-image {
+        text-align: center;
+    }
+
+    .resp-image img {
+        display: block;
+        width: 50%;
+        max-width: 1368px;
+        margin: auto;
+    }
 }

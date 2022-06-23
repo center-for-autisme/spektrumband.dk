@@ -8,17 +8,15 @@ footer {
     margin: auto;
     text-align: center;
     background-color: $brand-color;
-}
-
-footer {
     padding-bottom: 1rem;
     border-top: $text-color 1rem solid;
     box-shadow: 0rem -0.1rem 0.2rem $very-dark-grey;
-}
 
-footer>img {
-    display: block;
-    width: 50%;
-    margin: auto;
-    padding-top: 1rem;
+    img {
+        display: block;
+        width: 50%;
+        max-width: 334px;
+        margin: auto;
+        padding-top: 1rem;
+    }
 }
