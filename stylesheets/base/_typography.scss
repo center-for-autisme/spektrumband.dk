@@ -10,45 +10,6 @@
 
 /* --------------------------- */
 
-@font-face {
-  font-family: 'changa_oneitalic';
-  src: url('typeface/changa_one/changaone-italic-webfont.woff2') format('woff2'),
-    url('typeface/changa_one/changaone-italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'changa_oneregular';
-  src: url('typeface/changa_one/changaone-regular-webfont.woff2') format('woff2'),
-    url('typeface/changa_one/changaone-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'antonregular';
-  src: url('typeface/anton/anton-regular-webfont.woff2') format('woff2'),
-    url('typeface/anton/anton-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'Lucida-Sans-Unicode';
-  src: url('typeface/lucida-sans-unicode/Lucida-Sans-Unicode.ttf.woff') format('woff'),
-    url('typeface/lucida-sans-unicode/Lucida-Sans-Unicode.ttf.svg') format('svg'),
-    url('typeface/lucida-sans-unicode/Lucida-Sans-Unicode.ttf.eot'),
-    url('typeface/lucida-sans-unicode/Lucida-Sans-Unicode.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
 
@@ -80,6 +41,20 @@ h1 {
   /* 24px --> 24 ÷ 24 = 1 */
   /* 24px --> 24 ÷ 16 = 1.5 */
   line-height: 1em;
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  padding: 3rem 33% 2rem 1rem;
+  border-radius: 0 0 100% 0%/0 0 100% 0%;
+  background-image: linear-gradient(to right, transparent 20%, rgb(109, 19, 19, 0.6) 60%, transparent 100%);
+  font-style: italic;
+  overflow: hidden;
+
+  /* Uncial */
+  span {
+    display: inline-block;
+    transform: skewX(-12deg) scaleY(2);
+  }
 }
 
 h2 {
@@ -132,7 +107,7 @@ ul {
 }
 
 ul {
-  list-style: square outside;
+  list-style: disc outside;
 }
 
 ol ol,

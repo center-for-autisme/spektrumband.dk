@@ -7,12 +7,13 @@ header {
     margin: auto;
     text-align: center;
     background-color: $brand-color;
-    background-image: url("../../images/Spektrumband.png");
+    background-image: image("Spektrumband.png");
     background-repeat: no-repeat;
     background-position-y: 10%;
     background-position-x: 5%;
     background-size: 30% auto;
     box-shadow: 0rem 0.1rem 0.2rem $very-dark-grey;
+
     /* Navigation */
 
     nav {
@@ -39,6 +40,7 @@ header {
         }
 
         a {
+            font-family: $header-font-stack;
             color: lightblue;
             display: block;
             padding: 0.5rem;
