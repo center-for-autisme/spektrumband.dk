@@ -403,11 +403,6 @@ body {
  * Basic typography style for copy text
  */
 /* Using viewport sized typography. Source: https://css-tricks.com/viewport-sized-typography/ */
-* {
-  box-sizing: border-box;
-  /* makes margin and padding part of the overall width of all elements */
-}
-
 /* --------------------------- */
 body {
   font-family: "Lucida-Sans-Unicode", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -551,7 +546,11 @@ a:focus {
 }
 
 header > nav a {
-  font-family: rgb(173, 216, 230);
+  color: rgb(173, 216, 230);
+}
+
+footer a {
+  color: rgb(91, 143, 138);
 }
 
 /* Screens 1000px - 1200px */
@@ -727,6 +726,28 @@ footer img {
   margin: auto;
   padding-top: 1rem;
 }
+footer address {
+  text-align: left;
+  padding: 0.5rem 0 3rem 1rem;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+footer address p {
+  text-indent: 0;
+  margin-bottom: 0.5rem;
+}
+footer address ul {
+  list-style-position: inside;
+  list-style-type: none;
+  padding: 0;
+}
+
+#wrapper {
+  padding: 0 0.5em 0 0.5em;
+}
 
 .cards {
   display: flex;
@@ -759,4 +780,12 @@ div.musiker img {
   border: 2px solid #6d1313;
   border-radius: 50%;
   margin-bottom: 0.5rem;
+}
+
+hr {
+  width: 35%;
+  margin: auto;
+  border-top: #f9f9f9 0.5rem dotted;
+  margin-bottom: 2rem;
+  background: #6d1313;
 }/*# sourceMappingURL=main.css.map */

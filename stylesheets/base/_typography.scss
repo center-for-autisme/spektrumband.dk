@@ -3,10 +3,6 @@
  */
 /* Using viewport sized typography. Source: https://css-tricks.com/viewport-sized-typography/ */
 
-* {
-  box-sizing: border-box;
-  /* makes margin and padding part of the overall width of all elements */
-}
 
 /* --------------------------- */
 
@@ -158,7 +154,11 @@ a:focus {
 }
 
 header>nav a {
-  font-family: $link-color;
+  color: $link-color;
+}
+
+footer a {
+  color: $link-color-dark;
 }
 
 /* Screens 1000px - 1200px */

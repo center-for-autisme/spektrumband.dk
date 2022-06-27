@@ -19,4 +19,23 @@ footer {
         margin: auto;
         padding-top: 1rem;
     }
+
+    address {
+        text-align: left;
+        padding: 0.5rem 0 3rem 1rem;
+        font-weight: 700;
+        width: fit-content;
+        margin: auto;
+
+        p {
+            text-indent: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: none;
+            padding: 0;
+        }
+    }
 }
