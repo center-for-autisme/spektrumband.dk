@@ -33,7 +33,7 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 3em;
   /* 24px --> 24 ÷ 24 = 1 */
   /* 24px --> 24 ÷ 16 = 1.5 */
   line-height: 1em;
@@ -46,12 +46,7 @@ h1 {
   background-image: linear-gradient(to right, transparent 20%, rgb(109, 19, 19, 0.6) 60%, transparent 100%);
   font-style: italic;
   overflow: hidden;
-
-  /* Uncial */
-  span {
-    display: inline-block;
-    transform: skewX(-12deg) scaleY(2);
-  }
+  font-family: $header-h1-font-stack;
 }
 
 h2 {
@@ -159,6 +154,11 @@ header>nav a {
 
 footer a {
   color: $link-color-dark;
+}
+
+b {
+  font-family: $text-font-stack;
+  font-weight: 900;
 }
 
 /* Screens 1000px - 1200px */

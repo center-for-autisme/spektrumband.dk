@@ -3,6 +3,42 @@
 // -----------------------------------------------------------------------------
 
 @font-face {
+    font-family: 'retrofestregular';
+    src: font('retrofest/retrofest-webfont.woff2') format('woff2'),
+        font('retrofest/retrofest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blokletters_potlood';
+    src: font('blokletterspotlood_potlood_macroman/Blokletters-Potlood-webfont.woff2') format('woff2'),
+        font('blokletterspotlood_potlood_macroman/Blokletters-Potlood-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blokletters_balpenbalpen';
+    src: font('bloklettersbalpen_balpen_macroman/Blokletters-Balpen-webfont.woff2') format('woff2'),
+        font('bloklettersbalpen_balpen_macroman/Blokletters-Balpen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blokletters_viltstifviltstift';
+    src: font('bloklettersviltstift_viltstift_macroman/Blokletters-Viltstift-webfont.woff2') format('woff2'),
+        font('bloklettersviltstift_viltstift_macroman/Blokletters-Viltstift-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'changa_oneitalic';
     src: font('changa_one/changaone-italic-webfont.woff2') format('woff2'),
         font('changa_one/changaone-italic-webfont.woff') format('woff');
