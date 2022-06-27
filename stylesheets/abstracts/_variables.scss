@@ -8,13 +8,8 @@
 
 // Regular font family
 // @type List
-$text-font-stack: 'blokletters_balpenbalpen', 'comic sans', 'Lucida-Sans-Unicode',
+$text-font-stack: 'blokletters_balpenbalpen', 'Segoe Print',
   'Lucida Sans',
-  'Lucida Sans Regular',
-  'Lucida Grande',
-  'Lucida Sans Unicode',
-  Geneva,
-  Verdana,
   sans-serif;
 
 // Header font family
@@ -43,6 +38,9 @@ $text-size: 18px;
 // @type Number
 $letter-spacing: 0.015em;
 
+// default line height spacing
+// @type Number
+$line-height: 1.5;
 
 // Background color
 // @type Color

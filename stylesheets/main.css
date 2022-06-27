@@ -389,7 +389,7 @@ body {
 }
 @font-face {
   font-family: "blokletters_balpenbalpen";
-  src: url("../assets/fonts/bloklettersbalpen_balpen_macroman/Blokletters-Balpen-webfont.woff2") format("woff2"), url("../assets/fonts/bloklettersbalpen_balpen_macroman/Blokletters-Balpen-webfont.woff") format("woff");
+  src: url("../assets/fonts/bloklettersbalpen_balpen_macroman/Blokletters-Balpen-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -429,9 +429,13 @@ body {
 /* Using viewport sized typography. Source: https://css-tricks.com/viewport-sized-typography/ */
 /* --------------------------- */
 body {
-  font-family: "blokletters_balpenbalpen", "comic sans", "Lucida-Sans-Unicode", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", sans-serif;
   font-size: 18px;
   letter-spacing: 0.015em;
+  line-height: 1.5;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /*------------------------------------*
@@ -464,7 +468,7 @@ h1 {
   background-image: linear-gradient(to right, transparent 20%, rgba(109, 19, 19, 0.6) 60%, transparent 100%);
   font-style: italic;
   overflow: hidden;
-  font-family: "retrofestregular", "changa_oneregular", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "retrofestregular", "Brush Script MT", cursive, sans-serif;
 }
 
 h2 {
@@ -574,7 +578,7 @@ footer a {
 }
 
 b {
-  font-family: "blokletters_balpenbalpen", "comic sans", "Lucida-Sans-Unicode", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", sans-serif;
   font-weight: 900;
 }
 
@@ -716,7 +720,7 @@ header nav ul li:last-child {
   border-right: none;
 }
 header nav a {
-  font-family: "blokletters_balpenbalpen", "comic sans", "Lucida-Sans-Unicode", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", sans-serif;
   color: lightblue;
   display: block;
   padding: 0.5rem;
