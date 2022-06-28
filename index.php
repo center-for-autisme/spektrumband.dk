@@ -1,32 +1,5 @@
-<!doctype html>
-<html lang="da">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex" />
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-
-    <title>Spektrum Band</title>
-</head>
-
-<body>
-    <header>
-        <div id="band-image" class="resp-image">
-            <img src="assets/images/band01-transp.png" alt="Spektrum, band medlemmer">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Hjem</a>
-                </li>
-                <li>
-                    <a href="koncerter.html">Koncerter</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<?php $title = 'Spektrum Band';
+include 'header.php'; ?>
     <div id="wrapper">
         <article>
             <h1>
@@ -65,18 +38,7 @@
             <br>
         </article>
     </div>
-    <footer>
-        <img src="assets/images/Spektrumband.png" alt="Spektrum band logo">
-        <address>
-            <p>Kan bookes på:</p>
-            <ul>
-                <li><a href="mailto:mail@spektrumband.dk">mail@spektrumband.dk</a>
-                </li>
-                <li><a href="tel:41284545">41 28 45 45</a></li>
-            </ul>
-        </address>
-    </footer>
-
+<?php include 'footer.php'; ?>
 </body>
 
 </html>
