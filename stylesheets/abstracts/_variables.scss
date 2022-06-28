@@ -9,16 +9,13 @@
 // Regular font family
 // @type List
 $text-font-stack: 'blokletters_balpenbalpen', 'Segoe Print',
-  'Lucida Sans',
+  'Lucida Sans', cursive,
   sans-serif;
 
 // Header font family
 // @type list
-$header-font-stack: 'blokletters_viltstifviltstift', 'antonregular',
-  'changa_oneregular',
-  Impact,
-  Haettenschweiler,
-  'Arial Narrow Bold',
+$header-font-stack: 'blokletters_viltstifviltstift', 'Segoe Print',
+  'Lucida Sans', cursive,
   sans-serif;
 
 // H1 font family
