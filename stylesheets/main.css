@@ -399,37 +399,13 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "changa_oneitalic";
-  src: url("../assets/fonts/changa_one/changaone-italic-webfont.woff2") format("woff2"), url("../assets/fonts/changa_one/changaone-italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "changa_oneregular";
-  src: url("../assets/fonts/changa_one/changaone-regular-webfont.woff2") format("woff2"), url("../assets/fonts/changa_one/changaone-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "antonregular";
-  src: url("../assets/fonts/anton/anton-regular-webfont.woff2") format("woff2"), url("../assets/fonts/anton/anton-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lucida-Sans-Unicode";
-  src: url("../assets/fonts/lucida-sans-unicode/Lucida-Sans-Unicode.ttf.woff") format("woff"), url("../assets/fonts/lucida-sans-unicode/Lucida-Sans-Unicode.ttf.svg") format("svg"), url("../assets/fonts/lucida-sans-unicode/Lucida-Sans-Unicode.ttf.eot"), url("../assets/fonts/lucida-sans-unicode/Lucida-Sans-Unicode.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
 /**
  * Basic typography style for copy text
  */
 /* Using viewport sized typography. Source: https://css-tricks.com/viewport-sized-typography/ */
 /* --------------------------- */
 body {
-  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", sans-serif;
+  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", cursive, sans-serif;
   font-size: 18px;
   letter-spacing: 0.015em;
   line-height: 1.5;
@@ -448,7 +424,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "blokletters_viltstifviltstift", "antonregular", "changa_oneregular", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "blokletters_viltstifviltstift", "Segoe Print", "Lucida Sans", cursive, sans-serif;
   margin-bottom: 24px;
   font-weight: 500;
   letter-spacing: 0.025em;
@@ -578,7 +554,7 @@ footer a {
 }
 
 b {
-  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", sans-serif;
+  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", cursive, sans-serif;
   font-weight: 900;
 }
 
@@ -720,7 +696,7 @@ header nav ul li:last-child {
   border-right: none;
 }
 header nav a {
-  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", sans-serif;
+  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", cursive, sans-serif;
   color: lightblue;
   display: block;
   padding: 0.5rem;
