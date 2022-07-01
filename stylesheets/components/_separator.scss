@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the divider component.
+// -----------------------------------------------------------------------------
+
+.separator {
+    width: 100%;
+    text-align: center;
+    border-radius: 0.05em;
+
+    span {
+        display: inline-block;
+        width: 0.7em;
+        height: 0.7em;
+        overflow: hidden;
+        background-color: rgb(109, 19, 19);
+        background-image: radial-gradient(circle, rgb(249, 249, 249) 25%, rgb(255, 203, 32) 40%, rgb(109, 19, 19) 50%)
+    }
+
+    /*span:first-child {
+        border-radius: 0.2em 0 0 0.2em;
+    }
+    span:last-child {
+        border-radius: 0 0.2em 0.2em 0;
+    }*/
+}

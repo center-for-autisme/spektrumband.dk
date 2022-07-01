@@ -436,12 +436,12 @@ h1 {
   /* 24px --> 24 ÷ 16 = 1.5 */
   line-height: 1em;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   margin-top: 0;
   letter-spacing: 0.2rem;
   padding: 3rem 33% 2rem 1rem;
-  border-radius: 0 0 100% 0%/0 0 100% 0%;
-  background-image: linear-gradient(to right, transparent 20%, rgba(109, 19, 19, 0.6) 60%, transparent 100%);
+  border-radius: 0;
+  background-image: radial-gradient(rgb(255, 203, 32) 10%, transparent 60%);
   font-style: italic;
   overflow: hidden;
   font-family: "retrofestregular", "Brush Script MT", cursive, sans-serif;
@@ -788,10 +788,22 @@ div.musiker img {
   margin-bottom: 0.5rem;
 }
 
-hr {
-  width: 35%;
-  margin: auto;
-  border-top: #f9f9f9 0.5rem dotted;
-  margin-bottom: 2rem;
-  background: #6d1313;
+.separator {
+  width: 100%;
+  text-align: center;
+  border-radius: 0.05em;
+  /*span:first-child {
+      border-radius: 0.2em 0 0 0.2em;
+  }
+  span:last-child {
+      border-radius: 0 0.2em 0.2em 0;
+  }*/
+}
+.separator span {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  overflow: hidden;
+  background-color: rgb(109, 19, 19);
+  background-image: radial-gradient(circle, rgb(249, 249, 249) 25%, rgb(255, 203, 32) 40%, rgb(109, 19, 19) 50%);
 }/*# sourceMappingURL=main.css.map */

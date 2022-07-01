@@ -47,6 +47,10 @@ $backgr-color: rgb(249, 249, 249) !default;
 // @type Color
 $text-color: rgb(109, 19, 19) !default;
 
+// Copy text color half opaque
+// @type Color
+$text-color-opaque: rgba(109, 19, 19, 0.75) !default;
+
 // Main brand color
 // @type Color
 $brand-color: rgb(255, 203, 32) !default;

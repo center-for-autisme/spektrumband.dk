@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
-    <title><?php echo $title;?></title>
+    <title><?php echo $title; ?></title>
 </head>
 
 <body>
@@ -26,4 +27,3 @@
             </ul>
         </nav>
     </header>
-    
