@@ -15,14 +15,14 @@ include 'header.php'; ?>
             som mestrer mange forskellige genrer!
         </p>
         <div class="cards">
-            <div class="card musiker"><img src="assets/images/laerke.png" alt="Forsanger Lærke">
+            <div class="card musiker triangle_back"><img src="assets/images/laerke.png" alt="Forsanger Lærke">
                 <p><b>Lærke A</b> er sangerinde og inspireret
                     af
                     Paloma
                     Faith, Amy Winehouse, The
                     Pretty Reckless, Fleetwood Mac mv.</p>
             </div>
-            <div class="card musiker">
+            <div class="card musiker triangle_back">
                 <img src="assets/images/timo.png" alt="Forsanger Timo">
                 <p><b>Timo M</b> er blues og funk manden,
                     inspireret af Gary
