@@ -3,11 +3,11 @@ include 'header.php'; ?>
 <div id="wrapper">
     <article>
         <h1>
-            <span>S</span>pektrum
+            Spektrum
         </h1>
 
-        <blockquote><b>...et band, som udspringer af musikundervisningen på Center for
-                Autisme.
+        <blockquote><b>...et <span>band</span>, som udspringer af <span>musik</span>-undervisningen på <a href="centerforautisme.dk">Center for
+                    Autisme</a>.
             </b></blockquote>
         <div class="separator"><span></span><span></span><span></span><span></span><span></span></div>
         <p>

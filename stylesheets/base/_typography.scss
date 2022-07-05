@@ -43,12 +43,15 @@ h1 {
   margin-bottom: 0rem;
   margin-top: 0;
   letter-spacing: 0.2rem;
-  padding: 3rem 33% 2rem 1rem;
-  border-radius: 0;
-  background-image: radial-gradient($brand-color 10%, transparent 60%);
-  font-style: italic;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  background-image: image("triangle_light.png");
+  background-position: center 65%;
+  background-size: 35%;
+  background-repeat: no-repeat;
   overflow: hidden;
   font-family: $header-h1-font-stack;
+  font-style: italic;
 }
 
 h2 {
@@ -130,6 +133,11 @@ blockquote b {
   text-indent: 0;
 }
 
+blockquote span {
+  font-size: large;
+  text-transform: uppercase;
+}
+
 /*--- LINKS ---*/
 a {
   color: $link-color;
@@ -153,6 +161,10 @@ a:focus {
 
 header>nav a {
   color: $link-color;
+}
+
+#wrapper a {
+  color: $link-color-dark;
 }
 
 footer a {

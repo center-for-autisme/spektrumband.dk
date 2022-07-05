@@ -439,12 +439,15 @@ h1 {
   margin-bottom: 0rem;
   margin-top: 0;
   letter-spacing: 0.2rem;
-  padding: 3rem 33% 2rem 1rem;
-  border-radius: 0;
-  background-image: radial-gradient(rgb(255, 203, 32) 10%, transparent 60%);
-  font-style: italic;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  background-image: url("../assets/images/triangle_light.png");
+  background-position: center 65%;
+  background-size: 35%;
+  background-repeat: no-repeat;
   overflow: hidden;
   font-family: "retrofestregular", "Brush Script MT", cursive, sans-serif;
+  font-style: italic;
 }
 
 h2 {
@@ -525,6 +528,11 @@ blockquote b {
   text-indent: 0;
 }
 
+blockquote span {
+  font-size: large;
+  text-transform: uppercase;
+}
+
 /*--- LINKS ---*/
 a {
   color: rgb(173, 216, 230);
@@ -548,6 +556,10 @@ a:focus {
 
 header > nav a {
   color: rgb(173, 216, 230);
+}
+
+#wrapper a {
+  color: rgb(91, 143, 138);
 }
 
 footer a {
