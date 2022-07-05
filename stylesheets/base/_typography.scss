@@ -10,13 +10,16 @@
 body {
 
   font-family: $text-font-stack;
-
   font-size: $text-size;
   letter-spacing: $letter-spacing;
   line-height: $line-height;
   hyphens: auto;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
 }
 
+Dygtige musikere og sangere har fundet sammen,
+og skabt et velswingende band
 
 /*------------------------------------*
   TYPE
@@ -41,13 +44,13 @@ h1 {
   line-height: 1em;
   display: block;
   margin-bottom: 0rem;
-  margin-top: 0;
+  margin-top: 1rem;
   letter-spacing: 0.2rem;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   text-align: center;
   background-image: image("triangle_light.png");
   background-position: center 65%;
-  background-size: 35%;
+  background-size: 10rem;
   background-repeat: no-repeat;
   overflow: hidden;
   font-family: $header-h1-font-stack;
@@ -134,8 +137,9 @@ blockquote b {
 }
 
 blockquote span {
-  font-size: large;
-  text-transform: uppercase;
+  $min_font: 24px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  text-transform: capitalize;
 }
 
 /*--- LINKS ---*/
@@ -174,58 +178,4 @@ footer a {
 b {
   font-family: $text-font-stack;
   font-weight: 900;
-}
-
-/* Screens 1000px - 1200px */
-
-@media screen and (min-width: 480px) {
-
-  body {
-    font-size: 18px;
-    font-size: 3.5vw;
-  }
-
-  article,
-  nav>ul {
-    Width: 90vw;
-  }
-}
-
-@media screen and (min-width: 800px) {
-
-  body {
-    font-size: 20px;
-    font-size: 2.7vw;
-  }
-
-  article,
-  nav>ul {
-    Width: 90vw;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-
-  body {
-    font-size: 20px;
-    font-size: 1.9vw;
-  }
-
-  article,
-  nav>ul {
-    Width: 66vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-
-  body {
-    font-size: 30px;
-    font-size: 1.9vw;
-  }
-
-  article,
-  nav>ul {
-    Width: 66vw;
-  }
 }

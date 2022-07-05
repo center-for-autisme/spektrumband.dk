@@ -5,20 +5,33 @@
 .cards {
     display: flex;
     flex-flow: column wrap;
+
+    @include respond-to('small') {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
 }
 
 .card {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: top;
     border: 1px solid #6d1313;
     border-radius: 1rem;
     box-shadow: 0 0 0.2rem, 0 0 0.2rem $brand_color;
     margin-bottom: 1rem;
     padding: 0.5rem;
     background: #f1f1f1;
-    flex-grow: 1;
+    flex-grow: 0;
+
+    @include respond-to('small') {
+        justify-content: top;
+        width: 60%;
+        max-width: 50%;
+    }
 }
+
 
 .card p {
     text-indent: 0;
@@ -26,9 +39,17 @@
 
 .triangle_back {
     background-image: image("triangle_light.png");
-    background-size: 65%;
+    background-size: 20rem;
     background-position: center 0.5rem;
     background-repeat: no-repeat;
+
+    @include respond-to('very-very-small') {
+        background-size: 16rem;
+    }
+
+    @include respond-to('very-small') {
+        background-size: 17rem;
+    }
 }
 
 
@@ -40,4 +61,5 @@ div.musiker img {
     border: 2px solid #6d1313;
     border-radius: 50%;
     margin-bottom: 0.5rem;
+    flex-grow: 0;
 }

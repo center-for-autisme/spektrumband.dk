@@ -413,12 +413,22 @@ body {
       -ms-hyphens: auto;
           hyphens: auto;
 }
+body {
+  font-size: 18px;
+}
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(18px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 28px;
+  }
+}
 
-/*------------------------------------*
-  TYPE
-*------------------------------------*/
-/*--- HEADINGS ---*/
-h1,
+Dygtige musikere og sangere har fundet sammen,
+og skabt et velswingende band h1,
 h2,
 h3,
 h4,
@@ -437,13 +447,13 @@ h1 {
   line-height: 1em;
   display: block;
   margin-bottom: 0rem;
-  margin-top: 0;
+  margin-top: 1rem;
   letter-spacing: 0.2rem;
-  padding: 3rem 1rem 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   text-align: center;
   background-image: url("../assets/images/triangle_light.png");
   background-position: center 65%;
-  background-size: 35%;
+  background-size: 10rem;
   background-repeat: no-repeat;
   overflow: hidden;
   font-family: "retrofestregular", "Brush Script MT", cursive, sans-serif;
@@ -529,8 +539,20 @@ blockquote b {
 }
 
 blockquote span {
-  font-size: large;
-  text-transform: uppercase;
+  text-transform: capitalize;
+}
+blockquote span {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  blockquote span {
+    font-size: calc(24px + 4 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  blockquote span {
+    font-size: 28px;
+  }
 }
 
 /*--- LINKS ---*/
@@ -571,51 +593,6 @@ b {
   font-weight: 900;
 }
 
-/* Screens 1000px - 1200px */
-@media screen and (min-width: 480px) {
-  body {
-    font-size: 18px;
-    font-size: 3.5vw;
-  }
-
-  article,
-nav > ul {
-    Width: 90vw;
-  }
-}
-@media screen and (min-width: 800px) {
-  body {
-    font-size: 20px;
-    font-size: 2.7vw;
-  }
-
-  article,
-nav > ul {
-    Width: 90vw;
-  }
-}
-@media screen and (min-width: 1000px) {
-  body {
-    font-size: 20px;
-    font-size: 1.9vw;
-  }
-
-  article,
-nav > ul {
-    Width: 66vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 30px;
-    font-size: 1.9vw;
-  }
-
-  article,
-nav > ul {
-    Width: 66vw;
-  }
-}
 /**
  * Clear inner floats
  */
@@ -632,7 +609,7 @@ nav > ul {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
   /* 1 */
   margin-left: auto;
   /* 2 */
@@ -765,24 +742,40 @@ footer address ul {
 
 #wrapper {
   padding: 0 0.5em 0 0.5em;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .cards {
   display: flex;
   flex-flow: column wrap;
 }
+@media (min-width: 767px) {
+  .cards {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
 
 .card {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: top;
   border: 1px solid #6d1313;
   border-radius: 1rem;
   box-shadow: 0 0 0.2rem, 0 0 0.2rem rgb(255, 203, 32);
   margin-bottom: 1rem;
   padding: 0.5rem;
   background: #f1f1f1;
-  flex-grow: 1;
+  flex-grow: 0;
+}
+@media (min-width: 767px) {
+  .card {
+    justify-content: top;
+    width: 60%;
+    max-width: 50%;
+  }
 }
 
 .card p {
@@ -791,9 +784,19 @@ footer address ul {
 
 .triangle_back {
   background-image: url("../assets/images/triangle_light.png");
-  background-size: 65%;
+  background-size: 20rem;
   background-position: center 0.5rem;
   background-repeat: no-repeat;
+}
+@media (min-width: 320px) {
+  .triangle_back {
+    background-size: 16rem;
+  }
+}
+@media (min-width: 480px) {
+  .triangle_back {
+    background-size: 17rem;
+  }
 }
 
 div.musiker img {
@@ -804,6 +807,7 @@ div.musiker img {
   border: 2px solid #6d1313;
   border-radius: 50%;
   margin-bottom: 0.5rem;
+  flex-grow: 0;
 }
 
 .separator {
