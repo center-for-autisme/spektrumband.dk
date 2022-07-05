@@ -6,7 +6,7 @@ include 'header.php'; ?>
             Spektrum
         </h1>
 
-        <blockquote><b>...et <span>band</span>, som udspringer af <span>musik</span>-undervisningen på <a href="centerforautisme.dk">Center for
+        <blockquote><b>...et <span>band</span>, som udspringer af <span>musik</span>-undervisningen på <a href="https://centerforautisme.dk">Center for
                     Autisme</a>.
             </b></blockquote>
         <div class="separator"><span></span><span></span><span></span><span></span><span></span></div>
