@@ -676,52 +676,32 @@ header {
   background-color: rgb(255, 203, 32);
   background-image: url("../assets/images/Spektrumband.png");
   background-repeat: no-repeat;
-  background-position-y: 10%;
-  background-position-x: 5%;
+  background-position-y: 24px;
+  background-position-x: 5px;
   background-size: 30% auto;
   border-bottom: rgb(109, 19, 19) 1rem solid;
   box-shadow: 0rem 0.1rem 0.2rem rgb(51, 51, 51);
-  /* Navigation */
   /* images */
-}
-header nav {
-  background-color: #6d1313;
-  text-align: center;
-}
-header nav ul {
-  list-style-type: none;
-  margin: auto auto 0;
-  overflow: hidden;
-  padding: 0;
-}
-header nav ul li {
-  float: left;
-  border-right: 1px solid #ffcb20;
-  margin-bottom: 0;
-  padding: 0;
-}
-header nav ul li:last-child {
-  border-right: none;
-}
-header nav a {
-  font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", cursive, sans-serif;
-  color: lightblue;
-  display: block;
-  padding: 0.5rem;
-  overflow: hidden;
-}
-header nav a:hover {
-  text-decoration: none;
-  background-color: #4b1313;
 }
 header .resp-image {
   text-align: center;
 }
 header .resp-image img {
   display: block;
-  width: 50%;
+  width: 75%;
   max-width: 1368px;
-  margin: auto;
+  margin: 0 1em 0 1em;
+  padding-top: 1em;
+}
+@media (min-width: 480px) {
+  header .resp-image img {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 767px) {
+  header .resp-image img {
+    margin: auto;
+  }
 }
 
 footer {
