@@ -16,14 +16,40 @@
         <div id="band-image" class="resp-image">
             <img src="assets/images/band01-transp.png" alt="Spektrum, band medlemmer">
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.php">Hjem</a>
-                </li>
-                <li>
-                    <a href="koncerter.php">Koncerter</a>
-                </li>
-            </ul>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input type="checkbox" />
+
+                <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                <ul id="menu">
+                    <a href="index.php">
+                        <li>Hjem</li>
+                    </a>
+                    <a href="koncerter.php">
+                        <li>Koncerter</li>
+                    </a>
+                    <a href="#kontakt">
+                        <li>Kontakt</li>
+                    </a>
+                </ul>
+            </div>
         </nav>
     </header>

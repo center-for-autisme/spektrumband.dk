@@ -1,6 +1,6 @@
 <footer>
     <img src="assets/images/Spektrumband.png" alt="Spektrum band logo">
-    <address>
+    <address id="kontakt">
         <p>Kan bookes på:</p>
         <ul>
             <li><a href="mailto:mail@spektrumband.dk">mail@spektrumband.dk</a>
