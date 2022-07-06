@@ -37,11 +37,11 @@ $letter-spacing: 0.015em;
 
 // default line height spacing
 // @type Number
-$line-height: 1.5;
+$line-height: 1.4;
 
 // Background color
 // @type Color
-$backgr-color: rgb(249, 249, 249) !default;
+$backgr-color: rgb(250, 245, 245) !default;
 
 // Copy text color
 // @type Color
@@ -62,6 +62,10 @@ $link-color: rgb(173, 216, 230) !default;
 // Dark link color
 // @type Color
 $link-color-dark: rgb(91, 143, 138) !default;
+
+// almost white
+// @type Color
+$almost-white-color: rgb(250, 250, 250) !default;
 
 // Light grey
 // @type Color

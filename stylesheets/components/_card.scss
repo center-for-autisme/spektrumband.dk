@@ -22,7 +22,7 @@
     box-shadow: 0 0 0.2rem, 0 0 0.2rem $brand_color;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    background: #f1f1f1;
+    background-color: $almost-white-color;
     flex-grow: 0;
 
     @include respond-to('small') {

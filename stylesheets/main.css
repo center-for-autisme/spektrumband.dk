@@ -371,7 +371,7 @@ a:hover, a:active, a:focus {
 }
 
 body {
-  background-color: rgb(249, 249, 249);
+  background-color: rgb(250, 245, 245);
   color: rgb(109, 19, 19);
 }
 
@@ -408,7 +408,7 @@ body {
   font-family: "blokletters_balpenbalpen", "Segoe Print", "Lucida Sans", cursive, sans-serif;
   font-size: 18px;
   letter-spacing: 0.015em;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -427,8 +427,11 @@ body {
   }
 }
 
-Dygtige musikere og sangere har fundet sammen,
-og skabt et velswingende band h1,
+/*------------------------------------*
+  TYPE
+*------------------------------------*/
+/*--- HEADINGS ---*/
+h1,
 h2,
 h3,
 h4,
@@ -532,14 +535,13 @@ blockquote {
   margin-bottom: 1.5rem;
   font-style: italic;
 }
-
 blockquote b {
   display: block;
   text-indent: 0;
 }
-
 blockquote span {
   text-transform: capitalize;
+  line-height: 1;
 }
 blockquote span {
   font-size: 24px;
@@ -552,6 +554,21 @@ blockquote span {
 @media screen and (min-width: 1200px) {
   blockquote span {
     font-size: 28px;
+  }
+}
+@media (min-width: 767px) {
+  blockquote span {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 320px) {
+  blockquote span {
+    font-size: calc(36px + 0 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1200px) {
+  blockquote span {
+    font-size: 36px;
   }
 }
 
@@ -767,7 +784,7 @@ footer address ul {
   box-shadow: 0 0 0.2rem, 0 0 0.2rem rgb(255, 203, 32);
   margin-bottom: 1rem;
   padding: 0.5rem;
-  background: #f1f1f1;
+  background-color: rgb(250, 250, 250);
   flex-grow: 0;
 }
 @media (min-width: 767px) {
