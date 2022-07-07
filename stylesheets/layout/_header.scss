@@ -9,51 +9,11 @@ header {
     background-color: $brand-color;
     background-image: image("Spektrumband.png");
     background-repeat: no-repeat;
-    background-position-y: 10%;
-    background-position-x: 5%;
+    background-position-y: 24px;
+    background-position-x: 5px;
     background-size: 30% auto;
     border-bottom: $text-color 1rem solid;
     box-shadow: 0rem 0.1rem 0.2rem $very-dark-grey;
-
-
-    /* Navigation */
-
-    nav {
-        background-color: #6d1313;
-        text-align: center;
-
-
-        ul {
-            list-style-type: none;
-            margin: auto auto 0;
-            overflow: hidden;
-            padding: 0;
-
-            li {
-                float: left;
-                border-right: 1px solid #ffcb20;
-                margin-bottom: 0;
-                padding: 0;
-            }
-
-            li:last-child {
-                border-right: none;
-            }
-        }
-
-        a {
-            font-family: $text-font-stack;
-            color: lightblue;
-            display: block;
-            padding: 0.5rem;
-            overflow: hidden;
-        }
-
-        a:hover {
-            text-decoration: none;
-            background-color: #4b1313;
-        }
-    }
 
     /* images */
 
@@ -64,13 +24,16 @@ header {
 
     .resp-image img {
         display: block;
-        width: 80%;
+        width: 75%;
         max-width: 1368px;
-        margin-bottom: -15%;
-        margin-left: 1rem;
+        margin: 0 1em 0 1em;
+        padding-top: 1em;
+
+        @include respond-to('very-small') {
+            margin-left: 2em;
+        }
 
         @include respond-to('small') {
-            width: 65%;
             margin: auto;
         }
     }
