@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link href="WireFraming/css/wireframe.css" rel="stylesheet" type="text/css">
 
     <title><?php echo $title; ?></title>
+    <script src="WireFraming/js/jquery-1.11.2.min.js"></script>
+    <script src="WireFraming/js/wireframe.js"></script>
 </head>
 
 <body>
