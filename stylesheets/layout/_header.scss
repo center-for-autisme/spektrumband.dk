@@ -15,6 +15,7 @@ header {
     border-bottom: $text-color 1rem solid;
     box-shadow: 0rem 0.1rem 0.2rem $very-dark-grey;
 
+
     /* Navigation */
 
     nav {
@@ -58,12 +59,19 @@ header {
 
     .resp-image {
         text-align: center;
+        overflow: hidden;
     }
 
     .resp-image img {
         display: block;
-        width: 50%;
+        width: 80%;
         max-width: 1368px;
-        margin: auto;
+        margin-bottom: -15%;
+        margin-left: 1rem;
+
+        @include respond-to('small') {
+            width: 65%;
+            margin: auto;
+        }
     }
 }

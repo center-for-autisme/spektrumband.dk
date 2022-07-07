@@ -716,12 +716,20 @@ header nav a:hover {
 }
 header .resp-image {
   text-align: center;
+  overflow: hidden;
 }
 header .resp-image img {
   display: block;
-  width: 50%;
+  width: 80%;
   max-width: 1368px;
-  margin: auto;
+  margin-bottom: -15%;
+  margin-left: 1rem;
+}
+@media (min-width: 767px) {
+  header .resp-image img {
+    width: 65%;
+    margin: auto;
+  }
 }
 
 footer {
