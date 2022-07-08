@@ -26,7 +26,7 @@ This file is part of Wireframes with HTML and CSS.
     font-weight: normal !important;
     color: #333 !important;
     border: none !important;
-    background: none !important;
+    /* background: none;*/
     box-shadow: none !important;
 }
 
@@ -82,7 +82,7 @@ audio,
 video {
     background: #fff;
     outline: 1px #333 dashed;
-    background: rgba(120, 120, 120, 0.05) !important;
+    background: rgba(120, 120, 120, 0.1) !important;
     overflow: hidden;
 }
 
@@ -95,14 +95,14 @@ p {
 .no_wire {
     background: #fff;
     outline: none;
-    background: rgba(255, 255, 255, 1)
+    background: transparent;
 }
 
 .image_holder {
-    background-image: url("../images/image_placeholder.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../images/image_placeholder.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .image_holder>label,
